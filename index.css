@@ -1,0 +1,79 @@
+/* 🌐 Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 🌈 Vibrant Animated Background */
+body {
+  background: linear-gradient(135deg, #ff6ec4, #7873f5, #66e6ff, #fddb92);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* 🌟 Title */
+h1 {
+  font-size: 3rem;
+  color: #1f3f71; /* Dark royal blue */
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* 📱 Grid Layout for App Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* 💳 Social Media Card Style */
+.card {
+  background: rgba(255, 255, 255, 0.9); /* Light frosted glass effect */
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼️ App Icons */
+.card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+/* 📝 App Name Text */
+.card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* 🔄 Gradient Animation Keyframes */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
